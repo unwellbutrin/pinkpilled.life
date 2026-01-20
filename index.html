@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PINK PILLED™ - Non-Traditional Federal Prime Contracting & Strategic Defense Solutions.">
+    <title>PINK PILLED™ | Federal Prime Contracting</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://unwellbutrin.art/SITE%20MEDIA/PNKPLLD.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Integrated & Optimized CSS for PINK PILLED */
+        :root {
+            --primary-color: #ff66b3;
+            --primary-dark: #ff4da6;
+            --primary-light: #ffcce5;
+            --secondary-color: #10B981;
+            --navy-dark: #0a192f;
+            --text-color: #1F2937;
+            --text-muted: #6B7280;
+            --bg-white: #FFFFFF;
+            --bg-light: #F9FAFB;
+            --border-color: #E5E7EB;
+            --font-main: 'Inter', sans-serif;
+            --transition: all 0.3s ease;
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-main); color: var(--text-color); line-height: 1.6; background-color: var(--bg-white); -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        ul { list-style: none; }
+        
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 0 15px; }
+        .section-padding { padding: 100px 0; }
+        .bg-light { background-color: var(--bg-light); }
+        .text-center { text-align: center; }
+
+        /* Navbar */
+        .navbar { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            z-index: 1000; 
+            background-color: white; 
+            padding: 8px 0; 
+            border-bottom: 1px solid var(--border-color); 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02); 
+        }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        
+        .logo { 
+            font-size: 1.4rem; 
+            font-weight: 800; 
+            color: var(--primary-color); 
+            display: flex; 
+            align-items: center; 
+            gap: 15px; 
+        }
+        .logo-img { height: 80px; width: auto; object-fit: contain; }
+        .logo .dot { color: var(--primary-color); }
+        
+        .nav-links { display: flex; align-items: center; gap: 30px; }
+        .nav-links a { font-weight: 500; color: var(--text-color); font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--primary-color); }
+
+        /* Hero Section */
+        .hero-section { 
+            padding-top: 200px; 
+            padding-bottom: 100px; 
+            background: radial-gradient(circle at top right, var(--primary-light), transparent 40%),
+                        radial-gradient(circle at bottom left, #ecfdf5, transparent 40%);
+            overflow: hidden;
+        }
+        .hero-container { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        
+        /* Chromatic/Metal Hero Title Style */
+        .chromatic-text { 
+            background: linear-gradient(180deg, 
+                var(--navy-dark) 0%, 
+                #1b2c45 25%, 
+                var(--primary-color) 46%, 
+                #ffffff 50%, 
+                var(--primary-color) 54%, 
+                #1b2c45 75%, 
+                var(--navy-dark) 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: var(--navy-dark); 
+            font-weight: 800;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+        }
+
+        .hero-title { 
+            font-size: 3.5rem; 
+            line-height: 1.1; 
+            margin-bottom: 1rem; 
+        }
+        
+        .hero-subtitle { font-size: 1.25rem; color: var(--text-muted); margin-bottom: 2.5rem; }
+        
+        /* Hero GIF Styling */
+        .hero-image { display: flex; justify-content: center; align-items: center; }
+        .hero-image img { 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 0; 
+            opacity: 0.82; 
+            filter: drop-shadow(0 0 15px rgba(255, 102, 179, 0.2));
+            transition: all 0.5s ease;
+        }
+        .hero-image:hover img { 
+            transform: scale(1.03); 
+            opacity: 1;
+            filter: drop-shadow(0 0 25px rgba(255, 102, 179, 0.4));
+        }
+
+        /* Buttons */
+        .btn { display: inline-block; padding: 14px 32px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: var(--transition); border: 2px solid transparent; text-align: center; }
+        .btn-primary { background-color: var(--primary-color); color: white; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(255, 102, 179, 0.3); }
+        .btn-secondary { background-color: white; color: var(--text-color); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background-color: var(--bg-light); border-color: var(--text-muted); }
+        .btn-light { background-color: white; color: var(--primary-color); }
+        .btn-outline-light { border: 2px solid white; color: white; background: transparent; }
+        .btn-block { display: block; width: 100%; }
+        
+        /* CTA Button Hover Effects */
+        .btn-cta-hover:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(255, 102, 179, 0.8); /* Pink Glow */
+        }
+        
+        .btn-sm { padding: 10px 24px; font-size: 0.9rem; }
+
+        /* Feature Cards */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+        .feature-card { padding: 40px; border-radius: 16px; background: white; border: 1px solid var(--border-color); transition: var(--transition); display: flex; flex-direction: column; align-items: flex-start; }
+        .feature-card:hover { transform: translateY(-5px); border-color: var(--primary-color); box-shadow: var(--shadow-lg); }
+        .icon-box { width: 50px; height: 50px; background: var(--primary-light); color: var(--primary-color); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.25rem; }
+        .feature-card h3 { margin-bottom: 15px; }
+        .feature-card p { margin-bottom: 25px; flex-grow: 1; }
+
+        /* ZigZag Feature & SAM Bubble */
+        .row { display: flex; flex-wrap: wrap; gap: 60px; align-items: center; }
+        .col-half { flex: 1; min-width: 320px; }
+        
+        .check-list li { 
+            margin-bottom: 12px; 
+            font-weight: 500; 
+            transition: var(--transition);
+            transform-origin: left;
+        }
+        .check-list li a {
+            display: flex; 
+            align-items: center; 
+            gap: 12px;
+            color: inherit;
+            text-decoration: none;
+            width: 100%;
+        }
+        .check-list li:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        .check-list i { color: var(--secondary-color); }
+
+        .sam-bubble {
+            background: var(--bg-light);
+            padding: 50px;
+            border-radius: 24px;
+            border: 2px dashed var(--primary-color);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+        }
+        .sam-bubble:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 40px rgba(255, 102, 179, 0.15);
+            background: white; 
+        }
+        .sam-icons {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            font-size: 3rem;
+        }
+        .sam-icons i {
+            transition: all 0.3s ease;
+        }
+        .sam-bubble:hover .sam-icons i {
+            text-shadow: 0 0 20px rgba(255, 102, 179, 0.8);
+            transform: translateY(-5px);
+        }
+
+        /* Pricing Grid & Interactive Modules */
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 60px; }
+        .pricing-card { 
+            padding: 40px; 
+            border-radius: 16px; 
+            background: white; 
+            border: 1px solid var(--border-color); 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+            position: relative; 
+            overflow: visible; 
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .pricing-card:hover { 
+            transform: translateY(-8px); 
+            border-color: var(--primary-color); 
+            box-shadow: 0 0 35px rgba(255, 102, 179, 0.4); 
+        }
+
+        .module-hover-icon {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.3s ease;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pricing-card:hover .module-hover-icon {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .pricing-card.popular { border-color: var(--primary-color); }
+        .popular-tag { 
+            position: absolute; 
+            top: -16px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            background: var(--primary-color); 
+            color: white; 
+            padding: 6px 18px; 
+            border-radius: 20px; 
+            font-size: 0.85rem; 
+            font-weight: 700; 
+            white-space: nowrap;
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(255, 102, 179, 0.2);
+        }
+
+        /* "In less than one year" bubble - Matched Style */
+        .timeframe-tag {
+            position: absolute;
+            top: -16px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            background: var(--primary-color); 
+            color: white; 
+            padding: 6px 18px; 
+            border-radius: 20px; 
+            font-size: 0.85rem; 
+            font-weight: 700; 
+            white-space: nowrap;
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(255, 102, 179, 0.2);
+        }
+
+        .price { margin: 20px 0; display: flex; align-items: baseline; justify-content: center; }
+        
+        .amount { 
+            font-size: 3rem; 
+            font-weight: 800; 
+            color: var(--primary-color); 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: inline-block;
+        }
+        
+        /* Animate price only when CTA button is hovered */
+        .pricing-card:has(.btn:hover) .amount {
+            transform: scale(1.2);
+            text-shadow: 0 0 25px rgba(255, 102, 179, 0.9);
+        }
+
+        .period { color: var(--text-muted); margin-left: 5px; }
+
+        .module-desc-pink {
+            color: var(--primary-color) !important;
+            transition: var(--transition);
+            cursor: default;
+            font-weight: 500;
+        }
+
+        /* Testimonials Slider */
+        .testimonials-slider { 
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            overflow: visible; 
+            padding: 40px 0 80px 0; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+        
+        .testimonial-card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 16px; 
+            box-shadow: var(--shadow-md); 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid var(--border-color);
+            cursor: default;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: 0 0 40px rgba(255, 102, 179, 0.45);
+        }
+
+        .feedback { font-style: italic; margin-bottom: 20px; color: #4B5563; font-size: 1.1rem; line-height: 1.5; }
+        .user-info { display: flex; align-items: center; gap: 15px; }
+        
+        /* AVATAR IMG SIZING */
+        .user-avatar-img { 
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%; 
+            object-fit: cover;
+            border: 2px solid var(--primary-color);
+            flex-shrink: 0; 
+        }
+
+        @media (max-width: 991px) {
+             .testimonials-slider { 
+                display: flex; 
+                gap: 20px; 
+                overflow-x: auto; 
+                padding: 60px 10px; 
+                scroll-snap-type: x mandatory; 
+                scrollbar-width: none; 
+                -webkit-overflow-scrolling: touch;
+                width: 100%;
+                grid-template-columns: none;
+            }
+            .testimonial-card { 
+                flex: 0 0 300px; 
+            }
+        }
+
+        /* Typing & Glow Container */
+        .typing-header-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .typing-heading {
+            color: var(--primary-color);
+            min-height: 1.2em;
+            margin-bottom: 0;
+            display: inline-block;
+            transition: text-shadow 0.8s ease;
+        }
+        .typing-icon {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            opacity: 0;
+            transition: opacity 0.5s ease, filter 0.8s ease;
+        }
+        
+        /* Inline GIF Animation for Hero Sub-heading */
+        .typing-icon-gif {
+            height: 24px;
+            width: auto;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            vertical-align: middle;
+            margin-left: 8px;
+            filter: drop-shadow(0 0 8px rgba(255, 102, 179, 0.6));
+        }
+
+        .pink-glow-text { text-shadow: 0 0 15px rgba(255, 102, 179, 0.8); }
+        .pink-glow-icon { filter: drop-shadow(0 0 15px rgba(255, 102, 179, 0.8)); }
+
+        .pop-in {
+            opacity: 0;
+            transform: scale(0.6);
+            transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .pop-in.visible { opacity: 1; transform: scale(1); }
+        
+        /* NEW: Impact Pop Animation for H2 */
+        .pop-impact {
+            opacity: 0;
+            transform: scale(0.5) translateY(50px);
+            transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1); /* Assertive/Bouncy Pop */
+            transform-origin: center center;
+            display: block; /* Ensures transforms work correctly on text blocks */
+        }
+        .pop-impact.visible {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+
+        /* About Section - Reverted Stats Layout */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .about-stats { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px; 
+            background: var(--bg-light); 
+            padding: 40px; 
+            border-radius: 16px; 
+            text-align: center; 
+            border: 1px solid var(--border-color);
+            
+            /* ADDED: Scroll and Hover Pop+Glow Animation */
+            opacity: 0;
+            transform: scale(0.9);
+            transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.6s ease;
+            position: relative; /* For bubble positioning */
+            overflow: visible; /* Allow bubble to be seen */
+        }
+        
+        .about-stats.visible {
+            opacity: 1;
+            transform: scale(1);
+            box-shadow: 0 0 20px rgba(255, 102, 179, 0.2); 
+        }
+        
+        .about-stats:hover {
+            transform: scale(1.03); 
+            box-shadow: 0 0 35px rgba(255, 102, 179, 0.4); 
+        }
+        
+        .stat-item h2 { 
+            color: var(--primary-color); 
+            font-size: 2.5rem; 
+            margin-bottom: 5px; 
+            opacity: 0;
+            transform: scale(0.3);
+            transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), text-shadow 0.3s ease;
+        }
+        
+        .stat-item h2.visible {
+            opacity: 1;
+            transform: scale(1);
+            text-shadow: 0 0 15px rgba(255, 102, 179, 0.6); 
+        }
+        
+        .stat-item:hover h2 {
+            transform: scale(1.15); 
+            text-shadow: 0 0 25px rgba(255, 102, 179, 0.8); 
+        }
+
+        .stat-item p { font-weight: 600; color: var(--text-muted); }
+
+        .our-story-label {
+            color: var(--primary-color);
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            opacity: 0;
+            transform: scale(0.8);
+            display: inline-block;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .our-story-label.visible {
+            opacity: 1;
+            transform: scale(1);
+            text-shadow: 0 0 15px rgba(255, 102, 179, 0.6);
+        }
+        
+        .tiktok-link {
+            grid-column: 1 / -1; /* Span full width */
+            margin-top: 15px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+        .tiktok-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* CTA Section Styles - Chromatic Title & Pink Glow Subtitle */
+        .cta-section { background: var(--primary-color); color: white; padding: 80px 0; }
+        .cta-buttons { display: flex; justify-content: center; gap: 20px; margin-top: 30px; flex-wrap: wrap; }
+        
+        .cta-bubble-wrapper {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            padding: 20px;
+        }
+        .cta-bg-icon {
+            position: absolute;
+            font-size: 6rem;
+            color: rgba(255,255,255, 0.15); /* Transparent white to blend */
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .cta-text-inside {
+            position: relative;
+            z-index: 2;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: 0 0 15px rgba(255, 102, 179, 0.9), 0 0 25px rgba(255, 255, 255, 0.5); /* Strong Pink Glow */
+            margin: 0;
+        }
+        
+        /* Updated Chromatic Title for CTA */
+        .cta-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            /* Chromatic/Metal Gradient applied to text */
+            background: linear-gradient(180deg, 
+                var(--navy-dark) 0%, 
+                #1b2c45 25%, 
+                #ffffff 46%, 
+                #ffffff 50%, 
+                #ffffff 54%, 
+                #1b2c45 75%, 
+                var(--navy-dark) 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: white; 
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+            background: linear-gradient(180deg, #0a192f 0%, #ffffff 50%, #0a192f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Updated Pink Glow Subtitle */
+        .cta-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+            opacity: 1;
+            color: white;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 102, 179, 1);
+            font-weight: 500;
+        }
+
+        /* Contact Section */
+        .contact-wrapper { display: flex; flex-wrap: wrap; background: white; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lg); }
+        .contact-info { flex: 1; min-width: 320px; background: #111827; color: white; padding: 60px; }
+        .contact-info h3 { color: white; margin-bottom: 20px; }
+        .contact-info p { color: #9CA3AF; margin-bottom: 30px; }
+        .contact-form { flex: 1.5; min-width: 320px; padding: 60px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; color: var(--text-color); }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 1rem; transition: var(--transition); }
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--primary-color); box-shadow: 0 0 0 3px rgba(255, 102, 179, 0.1); }
+
+        /* Footer */
+        .footer { padding-top: 80px; border-top: 1px solid var(--border-color); background: white; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; padding-bottom: 60px; }
+        .footer-brand p { color: var(--text-muted); margin-top: 15px; font-size: 0.95rem; }
+        .footer-links h4 { font-size: 1.1rem; margin-bottom: 20px; }
+        .footer-links ul li { margin-bottom: 12px; }
+        .footer-links ul li a { color: var(--text-muted); font-size: 0.9rem; }
+        .footer-links ul li a:hover { color: var(--primary-color); }
+        .footer-bottom { border-top: 1px solid var(--border-color); padding: 30px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; font-size: 0.9rem; color: var(--text-muted); }
+
+        @media (max-width: 991px) {
+            .hero-container, .about-grid { grid-template-columns: 1fr; text-align: center; }
+            .hero-title { font-size: 3rem; }
+            .nav-links { display: none; }
+            .about-stats { grid-template-columns: 1fr; }
+            .contact-info, .contact-form { padding: 40px 20px; }
+        }
+
+        .fade-in { opacity: 0; transform: translateY(20px); transition: 0.6s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="https://unwellbutrin.art/SITE%20MEDIA/PNKPLLD.png" alt="PINK PILLED Logo" class="logo-img">
+                <span>PINK PILLED<span class="dot">™</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Research & Development</a></li>
+                <li><a href="#contact" class="btn btn-primary btn-sm">Become a Contractor</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title chromatic-text">Non-Traditional Federal Prime Contracting</h1>
+                
+                <!-- Pink Glowing Typewriter Text with Animated GIF Icon -->
+                <div class="typing-header-wrapper" data-typing-trigger style="justify-content: flex-start; margin-top: -15px; margin-bottom: 25px; gap: 8px;">
+                    <p class="typing-heading" id="hero-sub-heading" style="font-size: 1.05rem; font-weight: 600; text-transform: none;"></p>
+                    <img id="hero-sub-gif" class="typing-icon-gif" src="https://unwellbutrin.art/SITE%20MEDIA/adf3f0fe.gif" alt="Pill GIF">
+                </div>
+
+                <p class="hero-subtitle">Accelerating defense acquisition through agile methodologies and cutting-edge tech. We bridge the gap between commercial innovation, disadvantaged populations, and mission-critical requirements.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Initiate Partnership</a>
+                    <a href="capabilities.html" class="btn btn-secondary">Our Capabilities</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://unwellbutrin.art/SITE%20MEDIA/PNKPLLD%20(1).gif" alt="PINK PILLED Identity" loading="eager">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <div class="typing-header-wrapper" data-typing-trigger>
+                    <h2 class="typing-heading" id="capabilities-heading" style="font-size: 2.5rem;"></h2>
+                    <i class="far fa-check-square typing-icon" id="capabilities-icon"></i>
+                </div>
+                <p class="section-subtitle">Specialized services for modern federal acquisition challenges.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="icon-box"><i class="far fa-lightbulb"></i></div>
+                    <h3>Talent Acquisition</h3>
+                    <p>Scouting next-generation non-traditional creatives, students, and professionals designed for high-stakes, multi-domain federal environments.</p>
+                    <a href="#contact" class="btn btn-primary btn-sm">Learn More</a>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="icon-box"><i class="fas fa-microchip"></i></div>
+                    <h3>Rapid R&D</h3>
+                    <p>Eliminating the 'Valley of Death' and preventing technological surprise while maintaining strategic surprise through rapid prototyping, iteration, and field testing.</p>
+                    <a href="#contact" class="btn btn-primary btn-sm">Learn More</a>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="icon-box"><i class="fas fa-file-contract"></i></div>
+                    <h3>Project Management</h3>
+                    <p>Leveraging Other Transaction Authority and Small Business Set Asides for faster, flexible, and non-traditional contracting paths.</p>
+                    <a href="#contact" class="btn btn-primary btn-sm">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Feature (ZigZag) -->
+    <section class="detailed-feature section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-half fade-in">
+                    <!-- SYSTEM FOR AWARD MANAGEMENT BUBBLE -->
+                    <div class="sam-bubble">
+                        <div class="sam-icons">
+                            <i class="fas fa-landmark"></i>
+                            <i class="far fa-window-restore"></i>
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>System for Award Management</h3>
+                        <p>PINK PILLED™ is building a new generation of women, LGBTQIA+, and other traditionally disadvantaged groups, who do business with the government...Not for submission, but for financial freedom, cultural impact, promoting societal change, and personal autonomy.</p>
+                    </div>
+                </div>
+                <div class="col-half fade-in">
+                    <h3 style="color: var(--primary-color);">Learn How to Become a Federal Contractor</h3>
+                    <p>Build a career that gives you freedom, impact, and long‑term stability. Our training modules will teach you, step by step, how to register your business, find opportunities, and enter the government marketplace with confidence.</p>
+                    <ul class="check-list">
+                        <li>
+                            <a href="#pricing">
+                                <i class="fas fa-check-circle"></i> Creating an Entity & How to Get Paid
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#pricing">
+                                <i class="fas fa-check-circle"></i> Identifying Strengths & Determining Niche
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#pricing">
+                                <i class="fas fa-check-circle"></i> Branding & Digital Ecosystem Setup
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section section-padding bg-light">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <h2 class="pop-in" style="font-size: 2.5rem; margin-bottom: 15px; color: var(--primary-color);">
+                    Training Modules <i class="fas fa-laptop-code"></i>
+                </h2>
+                <p class="section-subtitle">Scalable and affordable learning tailored to every future CEO's mission profile.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Contractor Foundations -->
+                <div class="pricing-card fade-in">
+                    <div class="module-hover-icon"><i class="fas fa-user-plus"></i></div>
+                    <div class="card-header text-center" style="border-bottom: 1px solid var(--border-color); padding-bottom: 25px;">
+                        <h4>Contractor Foundations</h4>
+                        <div class="price">
+                            <span class="amount">$33</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <p class="module-desc-pink" style="margin-bottom: 15px;">Perfect for beginners. A clear, empowering introduction to federal contracting without overwhelm.</p>
+                    </div>
+                    <ul class="check-list" style="margin: 25px 0; flex-grow: 1;">
+                        <li><i class="fas fa-check"></i> PDF Guide: “How Federal Contracting Actually Works (Plain English)”</li>
+                        <li><i class="fas fa-check"></i> UEI creation, SAM.gov registration, CAGE Codes, & Entity compliance walkthrough</li>
+                        <li><i class="fas fa-check"></i> Tutorial: How to search SAM.gov opportunities</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary btn-block">Choose Module</a>
+                </div>
+
+                <!-- Prime Partner -->
+                <div class="pricing-card popular fade-in">
+                    <div class="popular-tag">Mission Critical</div>
+                    <div class="module-hover-icon"><i class="fas fa-user-secret"></i></div>
+                    <div class="card-header text-center" style="border-bottom: 1px solid var(--border-color); padding-bottom: 25px;">
+                        <h4>Prime Partner</h4>
+                        <div class="price">
+                            <span class="amount">$99</span>
+                            <span class="period">/mo </span>
+                        </div>
+                        <p class="module-desc-pink" style="margin-bottom: 15px;">Live Mentorship with Full Proposal & Contract Management. Includes EVERYTHING in all other modules, PLUS:</p>
+                    </div>
+                    <ul class="check-list" style="margin: 25px 0; flex-grow: 1;">
+                        <li><i class="fas fa-check"></i> Technical Proposal Writing, Compliance Support, & Consultations</li>
+                        <li><i class="fas fa-check"></i> Public Endorsements, Recommendations, & Professional References</li>
+                        <li><i class="fas fa-check"></i> Sub-Contractor Opportunities from PINK PILLED</li>
+                        <li><i class="fas fa-check"></i> Career Pathways Assessment & Slack Community Access</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-block">Learn More</a>
+                </div>
+
+                <!-- Visionary Package -->
+                <div class="pricing-card fade-in">
+                    <div class="module-hover-icon"><i class="fas fa-user-tie"></i></div>
+                    <div class="card-header text-center" style="border-bottom: 1px solid var(--border-color); padding-bottom: 25px;">
+                        <h4>Visionary Package</h4>
+                        <div class="price"> 
+                            <span class="amount">$44</span>
+                            <span class="period">/mo </span>
+                        </div>
+                        <p class="module-desc-pink" style="margin-bottom: 15px;">Includes EVERYTHING in Starter, PLUS: Deep Dive Modules (full PDFs + video walkthroughs)</p>
+                    </div>
+                    <ul class="check-list" style="margin: 25px 0; flex-grow: 1;">
+                        <li><i class="fas fa-check"></i> Building Your Digital Ecosystem for Federal Work & PTAC/APEX navigation</li>
+                        <li><i class="fas fa-check"></i> Understanding the Federal Acquisition Lifecycle</li>
+                        <li><i class="fas fa-check"></i> How to Read a Solicitation (RFP/RFQ/Sources Sought)</li>
+                        <li><i class="fas fa-check"></i> How to Evaluate if You Should Bid & Identifying Leads</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary btn-block">Choose Module</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section section-padding">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <div class="typing-header-wrapper" data-typing-trigger>
+                    <h2 class="typing-heading" id="testimonials-heading" style="font-size: 2.5rem;"></h2>
+                    <i class="fas fa-fingerprint typing-icon" id="testimonials-icon"></i>
+                </div>
+                <p class="section-subtitle">Real feedback from across the academia ecosystem.</p>
+            </div>
+
+            <!-- UPDATED AVATAR IMAGES -->
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <p class="feedback">"I highly recommend Megan French for her exceptional ability to bridge the gap between complex technical tools and strategic R&D initiatives. As the CEO of PINK PILLED, Megan demonstrates a proactive and visionary approach to research management. "</p>
+                    <div class="user-info">
+                        <img src="https://unwellbutrin.art/SITE%20MEDIA/1631310452470.jpg" alt="Dr. R. Irmak" class="user-avatar-img">
+                        <div><h5> Dr. R. Irmak</h5><span>PhD, Philosophy</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="feedback">"It is a rare to know someone who is a forward thinker with the ability to problem solve and educate others in diverse concepts. Her skills and knowledge would be an asset to any organization."</p>
+                    <div class="user-info">
+                        <img src="https://unwellbutrin.art/SITE%20MEDIA/ohio_university_logo.jpg" alt="K. Norris" class="user-avatar-img">
+                        <div><h5>K. Norris</h5><span>B.S., Wildlife Biology</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="feedback">"Your (French's) transparent disclosure of using an AI tool for research organization is a commendable and professional practice that enhances the credibility of your original work.
+"</p>
+                    <div class="user-info">
+                        <img src="https://unwellbutrin.art/SITE%20MEDIA/images%20(1).jpg" alt="Dr. Z. Sani" class="user-avatar-img">
+                        <div><h5>Dr. Z. Sani</h5><span>PhD, Philosophy</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding bg-light">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content fade-in">
+                    <h5 class="our-story-label pop-in visible">Our Story</h5>
+                    <!-- POP IMPACT EFFECT HEADER -->
+                    <h2 class="pop-impact" style="margin: 20px 0; color: #111827; font-size: 2.5rem;">
+                        Eliminating Boundaries in Federal Systems
+                    </h2>
+                    <p>Founded in 2025, PINK PILLED™ was born from a singular mission: ensuring that financial freedom of historically disadvantaged civilians, scientific discovery, and national security are not held back by technical debt or slow acquisition cycles.<br /><br />
+Our team consists of independent researchers, subcontractors, and elite developers who are obsessed with mission success and cleaner integration. <br /><br /> 
+We focus on scouting and recruiting talent from historically adversely affected groups all over the US in an effort to give back and level the playing field</p>
+                </div>
+                
+                <div class="about-stats pop-in">
+                    <!-- PINK BUBBLE TEXT -->
+                    <span class="timeframe-tag">in less than one year</span>
+                    
+                    <div class="stat-item">
+                        <h2 class="stat-number">4K+</h2>
+                        <p>Members</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2 class="stat-number">11M+</h2>
+                        <p>Impressions</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2 class="stat-number">24/7</h2>
+                        <p>Support</p>
+                    </div>
+                    
+                    <!-- TIKTOK LINK INSIDE STATS CONTAINER -->
+                    <a href="https://www.tiktok.com/@prozacncheese" target="_blank" class="tiktok-link">
+                        <i class="fab fa-tiktok"></i> join us on TikTok
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <div class="cta-bubble-wrapper">
+                <i class="far fa-comment cta-bg-icon"></i>
+                <h2 class="cta-title">Ready to Secure the Future?</h2>
+            </div>
+            <p class="cta-subtitle">Join the next generation of defense contractors with PINK PILLED™.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-light btn-cta-hover">Initiate Contact</a>
+                <a href="capabilities.html" class="btn btn-outline-light btn-cta-hover">Capability Statement</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Secure communications for mission-critical inquiries.</p>
+                    <div style="margin-top: 40px;">
+                        <div style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--primary-color); width: 20px;"></i>
+                            <span>Columbus, OH</span>
+                        </div>
+                        <div style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
+                            <i class="fas fa-envelope" style="color: var(--primary-color); width: 20px;"></i>
+                            <span>ask@pinkpilled.life</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <i class="fas fa-phone" style="color: var(--primary-color); width: 20px;"></i>
+                            <span>+1 (740) 234-0411 </span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 50px; display: flex; gap: 20px; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-slack"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your Name" required></div>
+                        <div class="form-group"><label>Secure Email</label><input type="email" placeholder="name@agency.gov" required></div>
+                        <div class="form-group"><label>Mission Brief / Inquiry</label><textarea rows="4" placeholder="Briefly describe your goals..." required></textarea></div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Secure Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="https://unwellbutrin.art/SITE%20MEDIA/PNKPLLD.png" alt="PINK PILLED Logo" class="logo-img">
+                        <span>PINK PILLED<span class="dot">™</span></span>
+                    </a>
+                    <p>Non-Traditional Federal Prime Contracting. Built for the mission, designed for success.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Capabilities</h4>
+                    <ul>
+                        <li><a href="#services">Talent Acquisition</a></li>
+                        <li><a href="#services">Rapid R&D</a></li>
+                        <li><a href="#services">Project Management</a></li>
+                        <li><a href="#">Training Modules</a></li>
+			<li><a href="#">Additional Resources</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Organization</h4>
+                    <ul>
+                        <li><a href="#about">Mission</a></li>
+                        <li><a href="#">Compliance</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Legal Statement</a></li>
+                         <li><a href="#">Disclosure Agreement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PINK PILLED™. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <span>CAGE Code: 180J1</span>
+                    <span>UEI: SJP5WQE3EDG7</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => { 
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        
+                        // Handle stats pop specifically
+                        if (entry.target.classList.contains('about-stats')) {
+                            entry.target.querySelectorAll('.stat-number').forEach(num => num.classList.add('visible'));
+                        }
+                        // Handle Our Story label specifically
+                        if (entry.target.classList.contains('our-story-label')) {
+                            entry.target.classList.add('visible');
+                        }
+                    }
+                });
+            }, { threshold: 0.15 });
+            
+            document.querySelectorAll('.fade-in, .pop-in, .pop-impact, .about-stats, .our-story-label').forEach(el => observer.observe(el));
+
+            const typeWriter = (element, text, i, fnCallback) => {
+                if (i < text.length) {
+                    element.innerHTML = text.substring(0, i + 1);
+                    setTimeout(() => typeWriter(element, text, i + 1, fnCallback), 50);
+                } else if (typeof fnCallback == 'function') {
+                    fnCallback();
+                }
+            };
+
+            const typingSections = [
+                {
+                    headingId: 'hero-sub-heading',
+                    iconId: 'hero-sub-icon',
+                    text: 'Why take the red or blue pill when you can take the pink pill?'
+                },
+                {
+                    headingId: 'capabilities-heading',
+                    iconId: 'capabilities-icon',
+                    text: 'Core Capabilities'
+                },
+                {
+                    headingId: 'testimonials-heading',
+                    iconId: 'testimonials-icon',
+                    text: 'Trusted by the STEM Community'
+                }
+            ];
+
+            const typingObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !entry.target.dataset.hasTyped) {
+                        entry.target.dataset.hasTyped = "true";
+                        const targetHeading = entry.target.querySelector('.typing-heading');
+                        if (!targetHeading) return;
+                        
+                        // Special handling for hero GIF icon
+                        if (targetHeading.id === 'hero-sub-heading') {
+                            const config = typingSections[0];
+                            const gifIcon = document.getElementById('hero-sub-gif');
+                            typeWriter(targetHeading, config.text, 0, () => {
+                                if(gifIcon) gifIcon.style.opacity = '1';
+                            });
+                            return;
+                        }
+
+                        const config = typingSections.find(s => s.headingId === targetHeading.id);
+                        if (config) {
+                            const heading = document.getElementById(config.headingId);
+                            const icon = document.getElementById(config.iconId);
+                            typeWriter(heading, config.text, 0, () => {
+                                if (icon) {
+                                    icon.style.opacity = '1';
+                                    if (config.headingId === 'testimonials-heading') {
+                                        heading.classList.add('pink-glow-text');
+                                        icon.classList.add('pink-glow-icon');
+                                    }
+                                }
+                            });
+                        }
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            document.querySelectorAll('[data-typing-trigger]').forEach(trigger => typingObserver.observe(trigger));
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    e.preventDefault();
+                    const targetEl = document.querySelector(targetId);
+                    if (targetEl) {
+                        const navHeight = document.querySelector('.navbar').offsetHeight;
+                        const targetPos = targetEl.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                        window.scrollTo({ top: targetPos, behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
